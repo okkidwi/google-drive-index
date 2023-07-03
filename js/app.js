@@ -32,6 +32,23 @@ function init() {
     </div>
   </div>
 </div>
+             <div class="col-md-12" style="margin-top: 60px">
+             <div class="text-center">
+                 <p class="">Donasi 🎁</p>
+                 <a class="btn donate btn-info" href="https://www.facebook.com/okkidwi27" title="Facebook">
+                     <span class="icon is-small"><i class="fab fa-facebook"></i></span>
+                     <span>Facebook</span>
+                 </a>
+                 <a class="btn donate" href="https://trakteer.id/okkidwi/tip" title="Trakteer" style="background: #BE1E2D;" target="_blank">
+                     <span class="icon is-small"><i class="fab fa-paypal"></i></span>
+                     <span>Trakteer</span>
+                 </a>
+                 <a class="btn donate" href="https://saweria.co/okkidwi" title="Saweria" style="background: #f5a623FF;" target="_blank">
+                     <span class="icon is-small"><i class="fab fa-paypal"></i></span>
+                     <span>Saweria</span>
+                 </a>
+             </div>
+         </div>   
 <br>
 <footer class="footer mt-auto py-3 text-muted ${UI.footer_style_class}" style="${UI.fixed_footer ?'position: fixed; ': ''}left: 0; bottom: 0; width: 100%; color: white; z-index: 9999;${UI.hide_footer ? ' display:none;': ' display:block;'}"> <div class="container" style="width: auto; padding: 0 10px;"> <p class="float-end"> <a href="#">⬆️ Kembali ke atas</a> </p> ${UI.credit ? '<p>Redesigned with <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart-fill" fill="red" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" /> </svg> by <a href="https://www.npmjs.com/package/@googledrive/index" target="_blank">TheFirstSpeedster</a>, based on Open Source Softwares.</p>' : ''} <p>© ${UI.copyright_year} - <a href=" ${UI.company_link}" target="_blank"> ${UI.company_name}</a>, All Rights Reserved.</p> </div> </footer>
   `;
