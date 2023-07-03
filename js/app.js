@@ -149,7 +149,7 @@ function nav(path) {
     });
     html += `</div></li>`;
 
-    html += `<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">${UI.nav_link_3}</a><div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item"  href="/">> Home</a>`;
+    html += `<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">${UI.nav_link_3}</a><div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item"  href="/">> Beranda</a>`;
 
     if (!model.is_search_page) {
         var arr = path.trim('/').split('/');
@@ -225,7 +225,7 @@ function requestListPath(path, params, resultCallback, authErrorCallback) {
         page_token: params['page_token'] || null,
         page_index: params['page_index'] || 0
     };
-    $('#update').html(`<div class='alert alert-info' role='alert'> Connecting...</div></div></div>`);
+    $('#update').html(`<div class='alert alert-info' role='alert'> Memuat...</div></div></div>`);
     $.post(path, p, function(data, status) {
         var res = jQuery.parseJSON(gdidecode(read(data)));
         if (res && res.error && res.error.code == '401') {
@@ -292,7 +292,7 @@ function requestSearch(params, resultCallback) {
         page_token: params['page_token'] || null,
         page_index: params['page_index'] || 0
     };
-    $('#update').html(`<div class='alert alert-info' role='alert'> Connecting...</div></div></div>`);
+    $('#update').html(`<div class='alert alert-info' role='alert'> Memuat...</div></div></div>`);
     $.post(`/${window.current_drive_order}:search`, p, function(data, status) {
         var res = jQuery.parseJSON(gdidecode(read(data)));
         if (res && res.data === null) {
@@ -348,7 +348,7 @@ function list(path) {
     <div id="head_md" style="display:none; padding: 20px 20px;"></div>
     <div class="${UI.path_nav_alert_class} d-flex align-items-center" role="alert" style="margin-bottom: 0; padding-bottom: 0rem;">
   <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-    <ol class="breadcrumb" id="folderne"><li class="breadcrumb-item"><a href="/">Home</a></li>`;
+    <ol class="breadcrumb" id="folderne"><li class="breadcrumb-item"><a href="/">Beranda</a></li>`;
     var navlink = '';
     var navfulllink = window.location.pathname;
     var breadbar = '';
@@ -606,7 +606,7 @@ function render_search_result_list() {
   <div class="container"><br>
   <div id="update"></div>
   <div class="card">
-  <div class="${UI.path_nav_alert_class} d-flex align-items-center" role="alert" style="margin-bottom: 0;">Search Results</div>
+  <div class="${UI.path_nav_alert_class} d-flex align-items-center" role="alert" style="margin-bottom: 0;">Hasil Pencarian</div>
   <div id="list" class="list-group text-break">
   </div>
   </div>
@@ -885,14 +885,14 @@ function file_others(path) {
 <div class="card-body">
 <div class="input-group mb-4">
   <div class="input-group-prepend">
-    <span class="input-group-text" id="">Full URL</span>
+    <span class="input-group-text" id="">Alamat URL</span>
   </div>
   <input type="text" class="form-control" id="dlurl" value="${url}">
 </div>
   <div class="card-text text-center">
   ${UI.display_drive_link ? '<a type="button" class="btn btn-info" href="https://drive.google.com/file/d/'+ obj.id +'/view" id ="file_drive_link" target="_blank">GD Link</a>': ''}
   <div class="btn-group text-center">
-      <a href="${url}" type="button" class="btn btn-primary">Download</a>
+      <a href="${url}" type="button" class="btn btn-primary">Unduh</a>
       <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <span class="sr-only"></span>
       </button>
@@ -902,7 +902,7 @@ function file_others(path) {
         <a class="dropdown-item" href="intent:${url}#Intent;component=idm.internet.download.manager.plus/idm.internet.download.manager.Downloader;S.title=${decodename};end">1DM+ (Plus)</a>
       </div>
   </div>
-  <button onclick="copyFunction()" onmouseout="outFunc()" class="btn btn-success"> <span class="tooltiptext" id="myTooltip">Copy</span> </button>
+  <button onclick="copyFunction()" onmouseout="outFunc()" class="btn btn-success"> <span class="tooltiptext" id="myTooltip">Salin</span> </button>
   </div>
   <br></div>`;
                 }
@@ -962,14 +962,14 @@ function file_code(path) {
 <div class="card-body">
 <div class="input-group mb-4">
   <div class="input-group-prepend">
-    <span class="input-group-text" id="">Full URL</span>
+    <span class="input-group-text" id="">Alamat URL</span>
   </div>
   <input type="text" class="form-control" id="dlurl" value="${url}">
 </div>
   <div class="card-text text-center">
   ${UI.display_drive_link ? '<a type="button" class="btn btn-info" href="https://drive.google.com/file/d/'+ obj.id +'/view" id ="file_drive_link" target="_blank">GD Link</a>': ''}
   <div class="btn-group text-center">
-      <a href="${url}" type="button" class="btn btn-primary">Download</a>
+      <a href="${url}" type="button" class="btn btn-primary">Unduh</a>
       <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <span class="sr-only"></span>
       </button>
@@ -979,7 +979,7 @@ function file_code(path) {
         <a class="dropdown-item" href="intent:${url}#Intent;component=idm.internet.download.manager.plus/idm.internet.download.manager.Downloader;S.title=${decodename};end">1DM+ (Plus)</a>
       </div>
   </div>
-  <button onclick="copyFunction()" onmouseout="outFunc()" class="btn btn-success"> <span class="tooltiptext" id="myTooltip">Copy</span> </button></div><br></div>
+  <button onclick="copyFunction()" onmouseout="outFunc()" class="btn btn-success"> <span class="tooltiptext" id="myTooltip">Salin</span> </button></div><br></div>
 <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.js" integrity="sha256-fZOd7N/oofoKcO92RzxvC0wMm+EvsKyRT4nmcmQbgzU=" crossorigin="anonymous"></script>
 `;
             } catch (err) {
@@ -1060,13 +1060,13 @@ ${UI.disable_video_download ? `` : `
 <div class="card-body">
 <div class="input-group mb-4">
   <div class="input-group-prepend">
-    <span class="input-group-text" id="">Full URL</span>
+    <span class="input-group-text" id="">Alamat URL</span>
   </div>
   <input type="text" class="form-control" id="dlurl" value="${url}">
 </div>
 ${UI.display_drive_link ? '<a type="button" class="btn btn-info" href="https://drive.google.com/file/d/'+ obj.id +'/view" id ="file_drive_link" target="_blank">GD Link</a>': ''}
 <div class="btn-group text-center">
-    <a href="${url}" type="button" class="btn btn-primary">Download</a>
+    <a href="${url}" type="button" class="btn btn-primary">Unduh</a>
     <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <span class="sr-only"></span>
     </button>
@@ -1085,7 +1085,7 @@ ${UI.display_drive_link ? '<a type="button" class="btn btn-info" href="https://d
       <a class="dropdown-item" href="intent:${url}#Intent;component=idm.internet.download.manager.plus/idm.internet.download.manager.Downloader;S.title=${decodename};end">1DM+ (Plus)</a>
     </div>
 </div>
-<button onclick="copyFunction()" onmouseout="outFunc()" class="btn btn-success"> <span class="tooltiptext" id="myTooltip">Copy</span> </button>
+<button onclick="copyFunction()" onmouseout="outFunc()" class="btn btn-success"> <span class="tooltiptext" id="myTooltip">Salin</span> </button>
 <br>
   </div>
   </div>
@@ -1141,14 +1141,14 @@ function file_audio(path) {
   <div class="card-body">
 <div class="input-group mb-4">
   <div class="input-group-prepend">
-    <span class="input-group-text" id="">Full URL</span>
+    <span class="input-group-text" id="">Alamat URL</span>
   </div>
   <input type="text" class="form-control" id="dlurl" value="${url}">
 </div>
   <div class="card-text text-center">
   ${UI.display_drive_link ? '<a type="button" class="btn btn-info" href="https://drive.google.com/file/d/'+ obj.id +'/view" id ="file_drive_link" target="_blank">GD Link</a>': ''}
   <div class="btn-group text-center">
-      <a href="${url}" type="button" class="btn btn-primary">Download</a>
+      <a href="${url}" type="button" class="btn btn-primary">Unduh</a>
       <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <span class="sr-only"></span>
       </button>
@@ -1158,7 +1158,7 @@ function file_audio(path) {
         <a class="dropdown-item" href="intent:${url}#Intent;component=idm.internet.download.manager.plus/idm.internet.download.manager.Downloader;S.title=${decodename};end">1DM+ (Plus)</a>
       </div>
   </div>
-  <button onclick="copyFunction()" onmouseout="outFunc()" class="btn btn-success"> <span class="tooltiptext" id="myTooltip">Copy</span> </button></div><br>
+  <button onclick="copyFunction()" onmouseout="outFunc()" class="btn btn-success"> <span class="tooltiptext" id="myTooltip">Salin</span> </button></div><br>
   </div>
   </div>
   </div>
@@ -1271,14 +1271,14 @@ function file_pdf(path) {
   <div class="card-body">
 <div class="input-group mb-4">
   <div class="input-group-prepend">
-    <span class="input-group-text" id="">Full URL</span>
+    <span class="input-group-text" id="">Alamat URL</span>
   </div>
   <input type="text" class="form-control" id="dlurl" value="${url}">
 </div>
   <div class="card-text text-center">
   ${UI.display_drive_link ? '<a type="button" class="btn btn-info" href="https://drive.google.com/file/d/'+ obj.id +'/view" id ="file_drive_link" target="_blank">GD Link</a>': ''}
   <div class="btn-group text-center">
-      <a href="${url}" type="button" class="btn btn-primary">Download</a>
+      <a href="${url}" type="button" class="btn btn-primary">Unduh</a>
       <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <span class="sr-only"></span>
       </button>
@@ -1288,7 +1288,7 @@ function file_pdf(path) {
         <a class="dropdown-item" href="intent:${url}#Intent;component=idm.internet.download.manager.plus/idm.internet.download.manager.Downloader;S.title=${decodename};end">1DM+ (Plus)</a>
       </div>
   </div>
-  <button onclick="copyFunction()" onmouseout="outFunc()" class="btn btn-success"> <span class="tooltiptext" id="myTooltip">Copy</span> </button></div><br>
+  <button onclick="copyFunction()" onmouseout="outFunc()" class="btn btn-success"> <span class="tooltiptext" id="myTooltip">Salin</span> </button></div><br>
   </div>
   </div>
   </div>
@@ -1379,14 +1379,14 @@ function file_image(path) {
   <div class="card-body">
 <div class="input-group mb-4">
   <div class="input-group-prepend">
-    <span class="input-group-text" id="">Full URL</span>
+    <span class="input-group-text" id="">Alamat URL</span>
   </div>
   <input type="text" class="form-control" id="dlurl" value="${url}">
 </div>
   <div class="card-text text-center">
   ${UI.display_drive_link ? '<a type="button" class="btn btn-info" href="https://drive.google.com/file/d/'+ obj.id +'/view" id ="file_drive_link" target="_blank">GD Link</a>': ''}
   <div class="btn-group text-center">
-      <a href="${url}" type="button" class="btn btn-primary">Download</a>
+      <a href="${url}" type="button" class="btn btn-primary">Unduh</a>
       <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <span class="sr-only"></span>
       </button>
@@ -1396,7 +1396,7 @@ function file_image(path) {
         <a class="dropdown-item" href="intent:${url}#Intent;component=idm.internet.download.manager.plus/idm.internet.download.manager.Downloader;S.title=${decodename};end">1DM+ (Plus)</a>
       </div>
   </div>
-  <button onclick="copyFunction()" onmouseout="outFunc()" class="btn btn-success"> <span class="tooltiptext" id="myTooltip">Copy</span> </button></div><br>
+  <button onclick="copyFunction()" onmouseout="outFunc()" class="btn btn-success"> <span class="tooltiptext" id="myTooltip">Salin</span> </button></div><br>
   </div>
   </div>
   </div>
