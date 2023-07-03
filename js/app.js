@@ -911,8 +911,8 @@ function file_others(path) {
 <div class="container"><br>
 <div class="card text-center">
     <div class="card-body text-center">
-      <div class="${UI.file_view_alert_class}" id="file_details" role="alert"><b>404.</b> That’s an error.</div>
-    </div><p>The requested URL was not found on this server. That’s all we know.</p>
+      <div class="${UI.file_view_alert_class}" id="file_details" role="alert"><b>404.</b> Itu kesalahan.</div>
+    </div><p>URL yang diminta tidak ditemukan di server ini. Hanya itu yang kami tahu.</p>
       <div class="card-text text-center">
       <div class="btn-group text-center">
         <a href="/" type="button" class="btn btn-primary">Homepage</a>
