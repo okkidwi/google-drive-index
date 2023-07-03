@@ -183,7 +183,13 @@ function nav(path) {
         }
     }
 
-    html += `<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Donasi</a><div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href=" ${UI.project1_link}" target="_blank"> ${UI.project1_name}</a><a class="dropdown-item" href=" ${UI.project2_link}" target="_blank"> ${UI.project2_name}</a>`;
+    html += `<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Donasi</a>
+  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+    <a class="dropdown-item" href="${uiConfig.project1_link}" target="_blank">${uiConfig.project1_name}</a>
+    <a class="dropdown-item" href="${uiConfig.project2_link}" target="_blank">${uiConfig.project2_name}</a>
+  </div>  
+</li>`;
     
     html += `</div></li><li class="nav-item">
     <a class="nav-link" href="${UI.contact_link}" target="_blank">${UI.nav_link_4}</a>
