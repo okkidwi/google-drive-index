@@ -8,67 +8,26 @@ function init() {
    </div>
 </header>
 <div>
-<div class="container" style="padding-top: ${UI.header_padding}px;${UI.fixed_footer ?' padding-bottom: clamp(170px, 100%, 300px);': ''}">
-    <div class="col-md-12" style="margin-bottom: 1rem;">
-        <div style="padding:0px;background:#BE1E2D;border-radius:0.25rem;width:100%;overflow:hidden;">
-            <iframe src="https://widget.trakteer.id/running-text-default.html?rt_count=10&rt_speed=normal&rt_theme=default&rt_2_clr1=rgba%28190%2C+30%2C+45%2C+1%29&rt_2_clr2=rgba%28255%2C+255%2C+255%2C+1%29&rt_2_clr3=rgba%28255%2C+200%2C+73%2C+1%29&rt_septype=image&rt_messages=Donasi+via+%26nbsp%3B%3Ca+href%3D%27https%3A%2F%2Ftrakteer.id%2Fokkidwi%2Ftip%27+style%3D%27color%3A%23FFC849%3B+text-decoration%3A+none%3B%27+target%3D%27_blank%27%3ETrakteer%3C%2Fa%3E+%2F+%26nbsp%3B%3Ca+href%3D%27https%3A%2F%2Fsaweria.co%2Fokkidwi%27+style%3D%27color%3A%23FFC849%3B+text-decoration%3A+none%3B%27+target%3D%27_blank%27%3ESaweria%3C%2Fa%3E&rt_txtshadow=true&creator_name=okkidwi&page_url=trakteer.id/okkidwi&mod=3&key=trstream-GYRRz9HrHogCmFO4A572&hash=9m8d5jpema95e07y" height="40px" width="100%" style="border:none;"></iframe>
-        </div>
-    </div>
-    <div id="content"></div>
+<div id="content" style="padding-top: ${UI.header_padding}px;${UI.fixed_footer ?' padding-bottom: clamp(170px, 100%, 300px);': ''}">
 </div>
 <div class="modal fade" id="SearchModel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="SearchModelLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+  <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="SearchModelLabel"></h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
           <span aria-hidden="true"></span>
         </button>
       </div>
       <div class="modal-body" id="modal-body-space">
       </div>
       <div class="modal-footer" id="modal-body-space-buttons">
-         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>     
       </div>
     </div>
   </div>
 </div>
-<div class="col-md-12" style="margin-top: 60px">
-    <div class="text-center">
-        <p class="">Dukungan 🤝</p>
-        <a class="btn donate btn-info" href="https://www.facebook.com/groups/153401064271807" title="Facebook">
-            <span class="icon is-small"><i class="fab fa-facebook"></i> </span><span>Facebook</span>
-        </a>
-        <a class="btn donate" href="https://trakteer.id/okkidwi/tip" title="Trakteer" style="background: #BE1E2D;" target="_blank">
-            <span class="icon is-small"><i class="fab fa-paypal"></i> </span><span>Trakteer</span>
-            <div class="qrcode">
-                <img alt="Love" src="https://i.postimg.cc/Yq0mZMKg/love.jpg">
-                <span style=position:absolute;top:30px;left:0;right:0;color:#000>Terima kasih! ❤</span>
-            </div>
-        </a>
-        <a class="btn donate" href="https://saweria.co/okkidwi" title="Saweria" style="background: #f5a623FF;" target="_blank">
-            <span class="icon is-small"><i class="fab fa-paypal"></i> </span><span>Saweria</span>
-            <div class="qrcode">
-                <img alt="Love" src="https://i.postimg.cc/Yq0mZMKg/love.jpg">
-                <span style=position:absolute;top:30px;left:0;right:0;color:#000>Terima kasih! ❤</span>
-            </div>
-        </a>
-            <a href="#"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2F${domainz}&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a>
-        </p>
-    </div>
-</div>
 <br>
-<footer class="footer text-muted text-center ${UI.footer_style_class}" style="${UI.fixed_footer ?'position: fixed; ': ''}left: 0; bottom: 0; width: 100%; color: white; z-index: 9999;${UI.hide_footer ? ' display:none;': ' display:block;'}">
-    <div class="container" style="width: auto; padding: 0 10px;">
-        <div class="row">
-            <div class="col-md-6">
-                <p class="kiri">© ${UI.copyright_year} <a href="${UI.company_link}" target="_blank">${UI.company_name}</a> ∙ <a href="https://www.facebook.com/okkidwi27" target="_blank" title="Beri kami waktu hingga 48 jam untuk memproses permintaan DMCA.">DMCA</a></p>
-            </div>
-            <div class="col-md-6">
-                <p class="kanan"><a href="#">🔼 Kembali keatas</a></p>
-            </div>
-        </div>
-        ${UI.credit ? '<p>Redesigned with <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart-fill" fill="red" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" /> </svg> by <a href="https://www.npmjs.com/package/@googledrive/index" target="_blank">TheFirstSpeedster</a>, based on Open Source Softwares.</p>' : ''}</div></footer>
+<footer class="footer mt-auto py-3 text-muted ${UI.footer_style_class}" style="${UI.fixed_footer ?'position: fixed; ': ''}left: 0; bottom: 0; width: 100%; color: white; z-index: 9999;${UI.hide_footer ? ' display:none;': ' display:block;'}"> <div class="container" style="width: auto; padding: 0 10px;"> <p class="float-end"> <a href="#">⬆️ Kembali keatas</a> </p> ${UI.credit ? '<p>Redesigned with <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart-fill" fill="red" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" /> </svg> by <a href="https://www.npmjs.com/package/@googledrive/index" target="_blank">TheFirstSpeedster</a>, based on Open Source Softwares.</p>' : ''} <p>© ${UI.copyright_year} - <a href=" ${UI.company_link}" target="_blank"> ${UI.company_name}</a>, All Rights Reserved.</p> </div> </footer>
   `;
     $('body').html(html);
 }
@@ -171,7 +130,7 @@ function nav(path) {
     var cur = window.current_drive_order || 0;
     html += `<nav class="navbar navbar-expand-lg${UI.fixed_header ?' fixed-top': ''} ${UI.header_style_class}">
     <div class="container-fluid">
-  <a class="navbar-brand" href="/${cur}:/">${UI.logo_image ? '<img border="0" alt="'+UI.company_name+'" src="'+UI.logo_link_name+'" height="'+UI.height+'" width="'+UI.logo_width+'">' : UI.logo_link_name}</a>
+  <a class="navbar-brand" href="/">${UI.logo_image ? '<img border="0" alt="'+UI.company_name+'" src="'+UI.logo_link_name+'" height="'+UI.logo_height+'" width="'+UI.logo_width+'">' : UI.logo_link_name}</a>
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -227,8 +186,8 @@ function nav(path) {
     var search_bar = `
 </ul>
 <form class="d-flex" method="get" action="/${cur}:search">
-<input class="form-control me-2" name="q" type="search" placeholder="Search" aria-label="Search" value="${search_text}" required>
-<button class="btn ${UI.search_button_class}" onclick="if($('#search_bar_form>input').val()) $('#search_bar_form').submit();" type="submit">Search</button>
+<input class="form-control me-2" name="q" type="search" placeholder="Cari" aria-label="Cari" value="${search_text}" required>
+<button class="btn ${UI.search_button_class}" onclick="if($('#search_bar_form>input').val()) $('#search_bar_form').submit();" type="submit">Cari</button>
 </form>
 </div>
 </div>
@@ -814,7 +773,6 @@ function onSearchResultItemClick(a_ele) {
     $('#SearchModelLabel').html(title);
     var content = `<div class="d-flex justify-content-center"><div class="spinner-border ${UI.loading_spinner_class} m-5" role="status" id="spinner"><span class="sr-only"></span></div>`;
     $('#modal-body-space').html(content);
-    $('#modal-body-space-buttons').html('<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>');    
 
     // Request a path
     $.post(`/${cur}:id2path`, {
