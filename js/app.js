@@ -915,7 +915,7 @@ function file_others(path) {
     </div><p>URL yang diminta tidak ditemukan di server ini. Hanya itu yang kami tahu.</p>
       <div class="card-text text-center">
       <div class="btn-group text-center">
-        <a href="/" type="button" class="btn btn-primary">Homepage</a>
+        <a href="/" type="button" class="btn btn-primary">Beranda</a>
       </div>
         </div><br>
 </div>
@@ -991,7 +991,7 @@ function file_code(path) {
     </div><p>The requested URL was not found on this server. That’s all we know.</p>
       <div class="card-text text-center">
       <div class="btn-group text-center">
-        <a href="/" type="button" class="btn btn-primary">Homepage</a>
+        <a href="/" type="button" class="btn btn-primary">Beranda</a>
       </div>
         </div><br>
 </div>
@@ -1101,7 +1101,7 @@ ${UI.display_drive_link ? '<a type="button" class="btn btn-info" href="https://d
     </div><p>The requested URL was not found on this server. That’s all we know.</p>
       <div class="card-text text-center">
       <div class="btn-group text-center">
-        <a href="/" type="button" class="btn btn-primary">Homepage</a>
+        <a href="/" type="button" class="btn btn-primary">Beranda</a>
       </div>
         </div><br>
 </div>
@@ -1172,7 +1172,7 @@ function file_audio(path) {
     </div><p>The requested URL was not found on this server. That’s all we know.</p>
       <div class="card-text text-center">
       <div class="btn-group text-center">
-        <a href="/" type="button" class="btn btn-primary">Homepage</a>
+        <a href="/" type="button" class="btn btn-primary">Beranda</a>
       </div>
         </div><br>
 </div>
@@ -1302,7 +1302,7 @@ function file_pdf(path) {
     </div><p>The requested URL was not found on this server. That’s all we know.</p>
       <div class="card-text text-center">
       <div class="btn-group text-center">
-        <a href="/" type="button" class="btn btn-primary">Homepage</a>
+        <a href="/" type="button" class="btn btn-primary">Beranda</a>
       </div>
         </div><br>
 </div>
@@ -1410,7 +1410,7 @@ function file_image(path) {
     </div><p>The requested URL was not found on this server. That’s all we know.</p>
       <div class="card-text text-center">
       <div class="btn-group text-center">
-        <a href="/" type="button" class="btn btn-primary">Homepage</a>
+        <a href="/" type="button" class="btn btn-primary">Beranda</a>
       </div>
         </div><br>
 </div>
