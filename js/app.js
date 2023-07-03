@@ -7,6 +7,7 @@ function init() {
    <div id="nav">
    </div>
 </header>
+<div>
 <div class="container" style="padding-top: ${UI.header_padding}px;${UI.fixed_footer ?' padding-bottom: clamp(170px, 100%, 300px);': ''}">
     <div class="col-md-12" style="margin-bottom: 1rem;">
         <div style="padding:0px;background:#BE1E2D;border-radius:0.25rem;width:100%;overflow:hidden;">
@@ -31,43 +32,8 @@ function init() {
     </div>
   </div>
 </div>
-<div class="col-md-12" style="margin-top: 60px">
-    <div class="text-center">
-        <p class="">Donate me a coffee ☕️</p>
-        <a class="btn donate btn-info" href="https://t.me/WinTenDev" title="Telegram">
-            <span class="icon is-small"><i class="fab fa-telegram"></i> </span><span>Telegram</span>
-        </a>
-        <a class="btn donate" href="https://trakteer.id/jovanzers/tip" title="Click me!" style="background: #BE1E2D;" target="_blank">
-            <span class="icon is-small"><i class="fab fa-paypal"></i> </span><span>Trakteer</span>
-            <div class="qrcode">
-                <img alt="Love" src="https://i.postimg.cc/Yq0mZMKg/love.jpg">
-                <span style=position:absolute;top:30px;left:0;right:0;color:#000>Thank you very much ❤</span>
-            </div>
-        </a>
-        <a class="btn donate" href="https://saweria.co/jovanzers" title="Click me!" style="background: #f5a623FF;" target="_blank">
-            <span class="icon is-small"><i class="fab fa-paypal"></i> </span><span>Saweria</span>
-            <div class="qrcode">
-                <img alt="Love" src="https://i.postimg.cc/Yq0mZMKg/love.jpg">
-                <span style=position:absolute;top:30px;left:0;right:0;color:#000>Thank you very much ❤</span>
-            </div>
-        </a>
-        <p>
-            <a href="#"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2F${domainz}&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a>
-        </p>
-    </div>
-</div>
 <br>
-<footer class="footer text-muted text-center ${UI.footer_style_class}" style="${UI.fixed_footer ?'position: fixed; ': ''}left: 0; bottom: 0; width: 100%; color: white; z-index: 9999;${UI.hide_footer ? ' display:none;': ' display:block;'}">
-    <div class="container" style="width: auto; padding: 0 10px;">
-        <div class="row">
-            <div class="col-md-6">
-                <p class="kiri">© ${UI.copyright_year} <a href="${UI.company_link}" target="_blank">${UI.company_name}</a> ∙ <a href="https://t.me/ContactWinTenBot" target="_blank" title="Please allow us up to 48 hours to process DMCA requests.">DMCA</a></p>
-            </div>
-            <div class="col-md-6">
-                <p class="kanan"><a href="#">🔼 Kembali ke atas</a></p>
-            </div>
-        </div>
-        ${UI.credit ? '<p>Redesigned with <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart-fill" fill="red" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" /> </svg> by <a href="https://www.npmjs.com/package/@googledrive/index" target="_blank">TheFirstSpeedster</a>, based on Open Source Softwares.</p>' : ''}</div></footer>
+<footer class="footer mt-auto py-3 text-muted ${UI.footer_style_class}" style="${UI.fixed_footer ?'position: fixed; ': ''}left: 0; bottom: 0; width: 100%; color: white; z-index: 9999;${UI.hide_footer ? ' display:none;': ' display:block;'}"> <div class="container" style="width: auto; padding: 0 10px;"> <p class="float-end"> <a href="#">⬆️ Kembali ke atas</a> </p> ${UI.credit ? '<p>Redesigned with <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart-fill" fill="red" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" /> </svg> by <a href="https://www.npmjs.com/package/@googledrive/index" target="_blank">TheFirstSpeedster</a>, based on Open Source Softwares.</p>' : ''} <p>© ${UI.copyright_year} - <a href=" ${UI.company_link}" target="_blank"> ${UI.company_name}</a>, All Rights Reserved.</p> </div> </footer>
   `;
     $('body').html(html);
 }
