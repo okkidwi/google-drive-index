@@ -769,7 +769,7 @@ function onSearchResultItemClick(a_ele) {
     var me = $(a_ele);
     var can_preview = me.hasClass('view');
     var cur = window.current_drive_order;
-    var title = `Loading...`;
+    var title = `Memuat...`;
     $('#SearchModelLabel').html(title);
     var content = `<div class="d-flex justify-content-center"><div class="spinner-border ${UI.loading_spinner_class} m-5" role="status" id="spinner"><span class="sr-only"></span></div>`;
     $('#modal-body-space').html(content);
