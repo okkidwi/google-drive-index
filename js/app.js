@@ -10,7 +10,7 @@ function init() {
 <div>
 <div class="container" style="padding-top: ${UI.header_padding}px;${UI.fixed_footer ?' padding-bottom: clamp(170px, 100%, 300px);': ''}">
     <div class="col-md-12" style="margin-bottom: 0rem; margin-top: 2rem;">
-        <div style="padding:0px 10px;background:#BE1E2D;border-radius:0.25rem;width:auto;overflow:hidden;">
+        <div style="padding:0px 30px;background:#BE1E2D;border-radius:0.25rem;width:auto;overflow:hidden;">
             <iframe src="https://widget.trakteer.id/running-text-default.html?rt_count=10&rt_speed=normal&rt_theme=default&rt_2_clr1=rgba%28190%2C+30%2C+45%2C+1%29&rt_2_clr2=rgba%28255%2C+255%2C+255%2C+1%29&rt_2_clr3=rgba%28255%2C+200%2C+73%2C+1%29&rt_septype=image&rt_messages=Donasi+via+%26nbsp%3B%3Ca+href%3D%27https%3A%2F%2Ftrakteer.id%2Fokkidwi%2Ftip%27+style%3D%27color%3A%23FFC849%3B+text-decoration%3A+none%3B%27+target%3D%27_blank%27%3ETrakteer%3C%2Fa%3E+%2F+%26nbsp%3B%3Ca+href%3D%27https%3A%2F%2Fsaweria.co%2Fokkidwi%27+style%3D%27color%3A%23FFC849%3B+text-decoration%3A+none%3B%27+target%3D%27_blank%27%3ESaweria%3C%2Fa%3E&rt_txtshadow=true&creator_name=okkidwi&page_url=trakteer.id/okkidwi&mod=3&key=trstream-GYRRz9HrHogCmFO4A572&hash=9m8d5jpema95e07y" height="40px" width="100%" style="border:none;"></iframe>
         </div>
     </div>
