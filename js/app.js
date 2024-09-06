@@ -15,15 +15,7 @@ function init() {
         </div>    
     </div>
     <div id="content"></div>
-            </div>
-        </div>
-        <script type='text/javascript' src='https://assets.trakteer.id/js/trbtn-overlay.min.js'></script>
-        <script type='text/javascript'>
-            (function() {
-                var trbtnId = trbtnOverlay.init('Donasi Trakteer','#be1e2d','https://trakteer.id/okkidwi/tip/embed/modal','https://cdn.trakteer.id/images/mix/cendol.png','40','floating-left');
-                trbtnOverlay.draw(trbtnId);
-            })();
-        </script>
+</div>
 <div class="modal fade" id="SearchModel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="SearchModelLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
